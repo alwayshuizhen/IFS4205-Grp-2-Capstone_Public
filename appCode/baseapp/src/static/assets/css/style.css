@@ -1,0 +1,106 @@
+#staffPageHeader {
+    background-image: url('/static/assets/img/curved-images/curved14.jpg');
+    background-position-y: 50%;
+}
+
+#publicPageHeader {
+    background-image: url('/static/assets/img/curved-images/curved0.jpg');
+    background-position-y: 50%;
+}
+
+#adminBreadcrumb,
+#staffBreadcrumb,
+#publicBreadcrumb {
+    padding-top: 30px;
+}
+
+#adminPageHeader {
+    background-image: url('/static/assets/img/curved-images/curved15-edit.jpg');
+    background-position-y: 50%;
+    opacity: 1.0;
+}
+
+#adminRecentDeniedEntries1 {
+    padding: 0px 15px 0px 15px;
+}
+
+#adminRecentDeniedEntries2 {
+    padding: 0px 15px 0px 15px;
+}
+
+.adaminDashboardTextArea {
+    padding: 0px 20px 0px 20px;
+}
+
+.profileInfoPad {
+    padding: 20px;
+}
+
+.cardPad {
+    padding: 15px;
+}
+
+#publicRed {
+    color: red;
+}
+
+#publicGreen {
+    color: green;
+}
+
+#sidenav-main {
+    overflow: hidden;
+}
+
+#signOutBody {
+    height: 100%;
+    overflow: hidden;
+}
+
+#signOutImg,
+#loginImg {
+    background-image: url('/static/assets/img/curved-images/curved6.jpg');
+}
+
+#loginContent {
+    min-height: 100%;
+}
+
+#loginBox {
+    margin-top: -80px;
+}
+
+#faceRegImg {
+    background-image: url('/static/assets/img/curved-images/curved14.jpg');
+}
+
+#faceRegHeader {
+    margin-top: -30px;
+}
+
+#faceRegVideoFeed {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#dongleCheckImg {
+    background-image: url('/static/assets/img/curved-images/curved1.jpg');
+}
+
+.changeMallStatus {
+    width: 70px;
+}
+
+.mallTBrow {
+    margin-left: 15px;
+}
+
+#videoElement {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#container {
+    max-width: 100%;
+    border-radius: 10px;
+}

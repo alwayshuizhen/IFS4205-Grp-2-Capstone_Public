@@ -1,0 +1,182 @@
+{% include "pages/header.html" %} {% include "pages/adminNavBar.html" %}
+<main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
+        <div class="container-fluid py-1 px-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+                    <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Main</a></li>
+                    <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>
+                </ol>
+                <h6 class="font-weight-bolder mb-0">Bulk Action Management</h6>
+            </nav>
+            <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                    <div class="input-group">
+                        <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" placeholder="Type here...">
+                    </div>
+                </div>
+                <ul class="navbar-nav  justify-content-end">
+                    <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                        <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                            <div class="sidenav-toggler-inner">
+                                <i class="sidenav-toggler-line"></i>
+                                <i class="sidenav-toggler-line"></i>
+                                <i class="sidenav-toggler-line"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item px-3 d-flex align-items-center">
+                        <a href="javascript:;" class="nav-link text-body p-0">
+                            <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid py-4">
+        {% if message %}
+           {{ message }}
+        {% endif %} 
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-4">
+                    <div class="card-header pb-0">
+                        <h6>Upload Vaccination Logs</h6>
+                    </div>
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <form method="POST">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            <div class="row adaminDashboardTextArea">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Format: name, phone number, vaccination type, vaccination dose number, timestamp</label>
+                                        <textarea name="vaccination" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br/>
+                                        <label for="exampleFormControlTextarea1">Credentials of admin (admin should not be the one currently logged in)</label>
+                                        <input type="username" name="username" class="form-control" placeholder="Username" required><br/>
+                                        <input type="password" name="password" class="form-control" placeholder="Password" required><br/>
+                                        <br/><input value="Upload" type="submit" class="btn bg-gradient-danger w-100"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-4">
+                    <div class="card-header pb-0">
+                        <h6>Upload Quarantine & Test Logs</h6>
+                    </div>
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <form method="POST">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            <div class="row adaminDashboardTextArea">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Format: name, phone number, test type, test result, test timestamp, quarantine type, quarantine duration, start time of quarantine</label>
+                                        <textarea name="testQuarantine" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br/>
+                                        <label for="exampleFormControlTextarea1">Credentials of admin (admin should not be the one currently logged in)</label>
+                                        <input type="username" name="username" class="form-control" placeholder="Username" required><br/>
+                                        <input type="password" name="password" class="form-control" placeholder="Password" required><br/>
+                                        <br/><input value="Upload" type="submit" class="btn bg-gradient-danger w-100"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-4">
+                    <div class="card-header pb-0">
+                        <h6>Create New Users</h6>
+                    </div>
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <form method="POST">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            <div class="row adaminDashboardTextArea">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Format: name, phone number, NRIC, photo_link, date of birth, zip code, username, password, rolename, dongle_id, is_active, date_of_issue, vaccination_log, quarantine_log, test_log, entry_log, visitation, access_status, vaccination status
+                                        </label>
+                                        <textarea name="createUser" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br/>
+                                        <label for="exampleFormControlTextarea1">Credentials of admin (admin should not be the one currently logged in)</label>
+                                        <input type="username" name="username" class="form-control" placeholder="Username" required><br/>
+                                        <input type="password" name="password" class="form-control" placeholder="Password" required><br/>
+                                        <br/><input value="Upload" type="submit" class="btn bg-gradient-danger w-100"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-4">
+                    <div class="card-header pb-0">
+                        <h6>Upload Dongles List</h6>
+                    </div>
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <form method="POST">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            <div class="row adaminDashboardTextArea">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Format: name, phone number, username, new dongle ID, dongle status, timestamp</label>
+                                        <textarea name="updateDongles" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br/>
+                                        <label for="exampleFormControlTextarea1">Credentials of admin (admin should not be the one currently logged in)</label>
+                                        <input type="username" name="username" class="form-control" placeholder="Username" required><br/>
+                                        <input type="password" name="password" class="form-control" placeholder="Password" required><br/>
+                                        <br/><input value="Upload" type="submit" class="btn bg-gradient-danger w-100"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-4">
+                    <div class="card-header pb-0">
+                        <h6>Update Users' roles</h6>
+                    </div>
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <form method="POST">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            <div class="row adaminDashboardTextArea">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Format: username, rolename, timestamp</label>
+                                        <textarea name="userRole" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br/>
+                                        <label for="exampleFormControlTextarea1">Credentials of admin (admin should not be the one currently logged in)</label>
+                                        <input type="username" name="username" class="form-control" placeholder="Username" required><br/>
+                                        <input type="password" name="password" class="form-control" placeholder="Password" required><br/>
+                                        <br/><input value="Upload" type="submit" class="btn bg-gradient-danger w-100"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include "pages/footer.html" %}
+    </div>
+</main>
+<!--   Core JS Files   -->
+<script src="{{ url_for('static', filename='assets/js/core/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/core/bootstrap.min.js') }}"></script>
+<!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="{{ url_for('static', filename='assets/js/soft-ui-dashboard.min.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+2021-10-26 14:17:44,775:INFO:app:create_app:Server is starting, preparing application now
+2021-10-26 14:18:20,903:INFO:app:login:Verifying alice's login attempt as public
+2021-10-26 14:18:22,600:INFO:app:login:Password stage of 3FA passed for alice as public
+2021-10-26 14:18:26,140:INFO:app:dongle_check:Dongle stage of 3FA passed for alice as public
+2021-10-26 14:18:29,596:INFO:app:facialRegRedirect:Face Recognition stage of 3FA passed for alice as public
+2021-10-26 14:18:29,906:INFO:app:home:User alice as public is at /home
+2021-10-26 14:18:30,250:INFO:app:publicProfile:User alice as public is at /user
+2021-10-26 14:22:03,667:INFO:app:publicDashboard:User alice as public is at /user/dashboard
+2021-10-26 14:23:34,432:INFO:app:publicDashboard:User alice as public is at /user/dashboard
+2021-10-26 14:23:38,131:INFO:app:publicProfile:User alice as public is at /user
+2021-10-26 14:23:47,204:INFO:app:publicDashboard:User alice as public is at /user/dashboard
+2021-10-26 14:24:35,105:INFO:app:publicProfile:User alice as public is at /user
+2021-10-26 14:24:43,466:INFO:app:publicDashboard:User alice as public is at /user/dashboard
+2021-10-26 14:27:41,212:INFO:app:logout:User alice as public has logged out
+2021-10-26 14:28:07,439:INFO:app:login:Verifying tmiles's login attempt as admin
+2021-10-26 14:28:08,965:INFO:app:login:Password stage of 3FA passed for tmiles as admin
+2021-10-26 14:28:11,268:INFO:app:dongle_check:Dongle stage of 3FA passed for tmiles as admin
+2021-10-26 14:28:14,567:INFO:app:facialRegRedirect:Face Recognition stage of 3FA passed for tmiles as admin
+2021-10-26 14:28:14,864:INFO:app:home:User tmiles as admin is at /home
+2021-10-26 14:28:15,168:INFO:app:adminProfile:User tmiles as admin is at /superadmin
+2021-10-26 14:29:09,813:INFO:app:adminAccessControl:User tmiles as admin is at /superadmin/AC
+2021-10-26 14:29:14,143:INFO:app:adminDashboard:User tmiles as admin is at /superadmin/dashboard
+2021-10-26 14:29:19,840:INFO:app:adminDongleManagement:User tmiles as admin is at /superadmin/DongleMgmt
+2021-10-26 14:29:25,397:INFO:app:adminMallManagement:User tmiles as admin is at /superadmin/MallMgmt
+2021-10-26 14:30:24,431:INFO:app:adminProfile:User tmiles as admin is at /superadmin
+2021-10-26 14:30:56,151:INFO:app:adminAccessControl:User tmiles as admin is at /superadmin/AC
+2021-10-26 14:30:59,331:INFO:app:adminDashboard:User tmiles as admin is at /superadmin/dashboard
+2021-10-26 14:31:04,353:INFO:app:adminDongleManagement:User tmiles as admin is at /superadmin/DongleMgmt
+2021-10-26 14:31:09,059:INFO:app:adminMallManagement:User tmiles as admin is at /superadmin/MallMgmt
+2021-10-26 14:31:13,686:INFO:app:adminMallManagement:User tmiles as admin is at /superadmin/MallMgmt
+2021-10-26 14:31:13,979:INFO:app:adminMallManagement:Mall receivers has been updated by tmiles as admin
+2021-10-26 14:31:19,569:INFO:app:adminMallManagement:User tmiles as admin is at /superadmin/MallMgmt
+2021-10-26 14:31:19,843:INFO:app:adminMallManagement:Mall receivers has been updated by tmiles as admin
+2021-10-26 14:32:43,561:INFO:app:adminMallManagement:User tmiles as admin is at /superadmin/MallMgmt
+2021-10-26 14:32:43,847:INFO:app:adminMallManagement:Mall receivers has been updated by tmiles as admin
+2021-10-26 14:33:52,308:INFO:app:logout:User tmiles as admin has logged out
+2021-10-26 14:34:50,811:INFO:app:login:Verifying simpsonshannon's login attempt as researcher
+2021-10-26 14:34:52,336:INFO:app:login:Password stage of 3FA passed for simpsonshannon as researcher
+2021-10-26 14:34:54,248:INFO:app:dongle_check:Dongle stage of 3FA passed for simpsonshannon as researcher
+2021-10-26 14:34:56,911:INFO:app:facialRegRedirect:Face Recognition stage of 3FA passed for simpsonshannon as researcher
+2021-10-26 14:34:57,254:INFO:app:home:User simpsonshannon as researcher is at /home
+2021-10-26 14:34:57,596:INFO:app:researcherDashboard:User simpsonshannon as researcher is at /researcher/dashboard
+2021-10-26 14:34:57,879:INFO:app:home:User simpsonshannon as researcher is at /home
+2021-10-26 14:35:02,969:INFO:app:researcherDashboard:User simpsonshannon as researcher is at /researcher/dashboard
+2021-10-26 14:35:03,246:INFO:app:researcherDashboard:Exportation of data has been requested by simpsonshannon as researcher
+2021-10-26 14:35:50,863:INFO:app:researcherDashboard:User simpsonshannon as researcher is at /researcher/dashboard
+2021-10-26 14:35:51,161:INFO:app:researcherDashboard:Exportation of data has been requested by simpsonshannon as researcher
+2021-10-26 14:39:48,340:INFO:app:logout:User simpsonshannon as researcher has logged out
+2021-10-26 14:40:02,728:INFO:app:login:Verifying john39's login attempt as contacttracer
+2021-10-26 14:40:04,301:INFO:app:login:Password stage of 3FA passed for john39 as contacttracer
+2021-10-26 14:40:06,168:INFO:app:dongle_check:Dongle stage of 3FA passed for john39 as contacttracer
+2021-10-26 14:40:07,656:INFO:app:facialRegRedirect:Face Recognition stage of 3FA passed for john39 as contacttracer
+2021-10-26 14:40:07,970:INFO:app:home:User john39 as contacttracer is at /home
+2021-10-26 14:40:08,286:INFO:app:ctDashboard:User john39 as contacttracer is at /contacttracer/dashboard
+2021-10-26 16:37:21,948:INFO:app:create_app:Server is starting, preparing application now
+2021-10-26 16:37:36,458:INFO:app:login:Verifying tmiles's login attempt as public
+2021-10-26 16:37:39,481:INFO:app:login:Password stage of 3FA passed for tmiles as public
+2021-10-26 16:38:16,479:INFO:app:login:Verifying simpsonshannon's login attempt as public
+2021-10-26 16:38:18,737:INFO:app:login:Password stage of 3FA passed for simpsonshannon as public
+2021-10-26 16:38:50,787:INFO:app:login:Verifying simpsonshannon's login attempt as public
+2021-10-26 16:38:53,025:INFO:app:login:Password stage of 3FA passed for simpsonshannon as public
+2021-10-26 16:39:15,103:INFO:app:login:Verifying simpsonshannon's login attempt as researcher
+2021-10-26 16:39:17,175:INFO:app:login:Password stage of 3FA passed for simpsonshannon as researcher
+2021-10-26 16:39:56,550:INFO:app:dongle_check:Dongle stage of 3FA passed for simpsonshannon as researcher
+2021-10-26 16:39:59,153:INFO:app:facialRegRedirect:Face Recognition stage of 3FA passed for simpsonshannon as researcher
+2021-10-26 16:39:59,545:INFO:app:home:User simpsonshannon as researcher is at /home
+2021-10-26 16:39:59,917:INFO:app:researcherDashboard:User simpsonshannon as researcher is at /researcher/dashboard
