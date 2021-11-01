@@ -168,7 +168,6 @@ def create_app():
                     donglePassed = False
 
                 database.sqlDataRetrieval.updateDongleAuth_reset(currentLoginInfo[1])
-                donglePassed = True
                 if donglePassed:
                     database.sqlDataRetrieval.logDongleCheck(session['sessionId'], currentLoginInfo[1], 1)
                     logger.info(messages.dongleLogin % currentUserPassed)
@@ -193,7 +192,6 @@ def create_app():
         if currentLoginInfo[5] == 1 and not current_user.is_authenticated:
             if request.method == 'POST':
                 result = faceRecogCheck(request.form['vidData'])
-                result = True
                 if result:
                     logger.info(messages.faceRecogLogin % currentUserPassed)
                     user = load_user(currentLoginInfo[1])
@@ -378,8 +376,6 @@ def create_app():
                     validInput = True
                 else:
                     validInput = False
-                
-                validInput = True
                 if validInput:
                     storedDongleId = database.sqlDataRetrieval.getDongleIdCheckIn(nameFromDongle, phoneNumFromDongle)[0]
                     if storedDongleId == dongleIdFromDongle:
